@@ -30,12 +30,7 @@ final class BibleStore: Sendable {
                   let chapter = Int(ref[0]),
                   let verseNum = Int(ref[1]) else { return nil }
 
-            // Strip scraping artifacts (JS code after "TOP OF PAGE" or "side_ads")
-            var text = String(parts[2])
-            if let range = text.range(of: " Book of ", options: .literal) {
-                text = String(text[text.startIndex..<range.lowerBound])
-            }
-            text = text.trimmingCharacters(in: .whitespaces)
+            let text = String(parts[2]).trimmingCharacters(in: .whitespaces)
 
             return Verse(
                 id: "\(book).\(chapter).\(verseNum)",
