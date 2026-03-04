@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#162D50"/>
+      <stop offset="100%" stop-color="#0A1E3D"/>
+    </radialGradient>
+    <radialGradient id="doveGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#FFD700" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pageL" x1="0" y1="0" x2="1" y2="0.5">
+      <stop offset="0%" stop-color="#F2E0B6"/>
+      <stop offset="100%" stop-color="#E5D0A0"/>
+    </linearGradient>
+    <linearGradient id="pageR" x1="1" y1="0" x2="0" y2="0.5">
+      <stop offset="0%" stop-color="#F2E0B6"/>
+      <stop offset="100%" stop-color="#E0C890"/>
+    </linearGradient>
+    <linearGradient id="ray" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#F5E6C8" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- Border with trefoil corners -->
+  <rect x="28" y="28" width="968" height="968" rx="10" fill="none" stroke="#D4A017" stroke-width="3.5" opacity="0.6"/>
+  <rect x="40" y="40" width="944" height="944" rx="8" fill="none" stroke="#B8860B" stroke-width="1.5" opacity="0.4"/>
+  <!-- Corner quatrefoils -->
+  <g fill="#B8860B" opacity="0.5">
+    <g transform="translate(52,52)"><circle r="5"/><circle cx="8" r="4"/><circle cx="-8" r="4"/><circle cy="8" r="4"/><circle cy="-8" r="4"/></g>
+    <g transform="translate(972,52)"><circle r="5"/><circle cx="8" r="4"/><circle cx="-8" r="4"/><circle cy="8" r="4"/><circle cy="-8" r="4"/></g>
+    <g transform="translate(52,972)"><circle r="5"/><circle cx="8" r="4"/><circle cx="-8" r="4"/><circle cy="8" r="4"/><circle cy="-8" r="4"/></g>
+    <g transform="translate(972,972)"><circle r="5"/><circle cx="8" r="4"/><circle cx="-8" r="4"/><circle cy="8" r="4"/><circle cy="-8" r="4"/></g>
+  </g>
+
+  <!-- Seven rays of light from dove to book -->
+  <g opacity="0.5">
+    <polygon points="512,300 440,700 470,700" fill="url(#ray)"/>
+    <polygon points="512,300 480,700 510,700" fill="url(#ray)"/>
+    <polygon points="512,300 520,700 550,700" fill="url(#ray)"/>
+    <polygon points="512,300 560,700 590,700" fill="url(#ray)"/>
+    <polygon points="512,300 400,700 430,700" fill="url(#ray)"/>
+    <polygon points="512,300 600,700 630,700" fill="url(#ray)"/>
+    <polygon points="512,300 360,700 390,700" fill="url(#ray)"/>
+  </g>
+
+  <!-- Dove glow -->
+  <ellipse cx="512" cy="230" rx="180" ry="160" fill="url(#doveGlow)"/>
+
+  <!-- Dove of the Holy Spirit (Byzantine stylized) -->
+  <g transform="translate(512, 220)">
+    <!-- Gold nimbus/halo -->
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#FFD700" stroke-width="3" opacity="0.6"/>
+    <circle cx="0" cy="0" r="65" fill="none" stroke="#D4A017" stroke-width="1" opacity="0.4"/>
+
+    <!-- Body -->
+    <ellipse cx="0" cy="5" rx="35" ry="22" fill="#F8F0E0" stroke="#D4C8A0" stroke-width="1"/>
+
+    <!-- Head -->
+    <circle cx="0" cy="-18" r="14" fill="#F8F0E0" stroke="#D4C8A0" stroke-width="1"/>
+
+    <!-- Beak -->
+    <polygon points="0,-8 -3,-3 3,-3" fill="#D4A017"/>
+
+    <!-- Left wing (spread) -->
+    <path d="M-30,0 Q-90,-30 -120,-10 Q-100,10 -35,10 Z" fill="#F8F0E0" stroke="#D4C8A0" stroke-width="1.5"/>
+    <!-- Wing feather lines -->
+    <line x1="-40" y1="2" x2="-100" y2="-8" stroke="#D4C8A0" stroke-width="1" opacity="0.5"/>
+    <line x1="-38" y1="6" x2="-95" y2="0" stroke="#D4C8A0" stroke-width="1" opacity="0.5"/>
+
+    <!-- Right wing (spread) -->
+    <path d="M30,0 Q90,-30 120,-10 Q100,10 35,10 Z" fill="#F8F0E0" stroke="#D4C8A0" stroke-width="1.5"/>
+    <!-- Wing feather lines -->
+    <line x1="40" y1="2" x2="100" y2="-8" stroke="#D4C8A0" stroke-width="1" opacity="0.5"/>
+    <line x1="38" y1="6" x2="95" y2="0" stroke="#D4C8A0" stroke-width="1" opacity="0.5"/>
+
+    <!-- Tail -->
+    <path d="M-12,22 Q0,50 12,22" fill="#F8F0E0" stroke="#D4C8A0" stroke-width="1"/>
+
+    <!-- Eye -->
+    <circle cx="-4" cy="-20" r="2" fill="#3B2510"/>
+    <circle cx="4" cy="-20" r="2" fill="#3B2510"/>
+  </g>
+
+  <!-- Open Scripture/Book -->
+  <g transform="translate(512, 620)">
+    <!-- Left page -->
+    <path d="M-8,0 L-210,-80 L-210,100 L-8,70 Z" fill="url(#pageL)" stroke="#C4B48A" stroke-width="1.5"/>
+    <!-- Spine -->
+    <path d="M-8,-5 L-8,75" stroke="#A09070" stroke-width="3" opacity="0.4"/>
+
+    <!-- Illuminated capital I on left page -->
+    <g transform="translate(-140, -30)">
+      <!-- Gold background box -->
+      <rect x="-22" y="-40" width="44" height="85" rx="3" fill="#D4A017" opacity="0.25"/>
+      <!-- The letter I -->
+      <text x="0" y="22" font-family="serif" font-size="80" font-weight="bold" fill="#CC2200" text-anchor="middle">I</text>
+      <!-- Gold serifs -->
+      <rect x="-18" y="-35" width="36" height="6" rx="2" fill="#D4A017" opacity="0.7"/>
+      <rect x="-18" y="33" width="36" height="6" rx="2" fill="#D4A017" opacity="0.7"/>
+      <!-- Knotwork decoration -->
+      <path d="M-20,45 Q-30,55 -15,60 Q0,52 -5,45" fill="none" stroke="#D4A017" stroke-width="2"/>
+      <path d="M20,45 Q30,55 15,60 Q0,52 5,45" fill="none" stroke="#D4A017" stroke-width="2"/>
+    </g>
+
+    <!-- Text lines beside the I -->
+    <g opacity="0.5">
+      <line x1="-90" y1="-30" x2="-30" y2="-40" stroke="#3B2510" stroke-width="1.5"/>
+      <line x1="-90" y1="-18" x2="-30" y2="-28" stroke="#3B2510" stroke-width="1.5"/>
+      <line x1="-90" y1="-6" x2="-30" y2="-16" stroke="#CC2200" stroke-width="1.5"/>
+      <line x1="-190" y1="30" x2="-30" y2="10" stroke="#3B2510" stroke-width="1.5"/>
+      <line x1="-190" y1="42" x2="-30" y2="22" stroke="#3B2510" stroke-width="1.5"/>
+      <line x1="-190" y1="54" x2="-30" y2="34" stroke="#3B2510" stroke-width="1.5"/>
+    </g>
+
+    <!-- Right page -->
+    <path d="M8,0 L210,-80 L210,100 L8,70 Z" fill="url(#pageR)" stroke="#C4B48A" stroke-width="1.5"/>
+
+    <!-- Red rubric initial on right page -->
+    <text x="40" y="-35" font-family="serif" font-size="24" font-weight="bold" fill="#CC2200" opacity="0.7">n</text>
+
+    <!-- Text lines on right page -->
+    <g opacity="0.45">
+      <line x1="60" y1="-40" x2="190" y2="-55" stroke="#3B2510" stroke-width="1.5"/>
+      <line x1="40" y1="-20" x2="190" y2="-40" stroke="#3B2510" stroke-width="1.5"/>
+      <line x1="40" y1="-8" x2="190" y2="-28" stroke="#3B2510" stroke-width="1.5"/>
+      <line x1="40" y1="4" x2="190" y2="-16" stroke="#CC2200" stroke-width="1.5"/>
+      <line x1="40" y1="16" x2="190" y2="-4" stroke="#3B2510" stroke-width="1.5"/>
+      <line x1="40" y1="28" x2="190" y2="8" stroke="#3B2510" stroke-width="1.5"/>
+      <line x1="40" y1="40" x2="190" y2="20" stroke="#3B2510" stroke-width="1.5"/>
+      <line x1="40" y1="52" x2="190" y2="32" stroke="#3B2510" stroke-width="1.5"/>
+      <line x1="40" y1="64" x2="190" y2="44" stroke="#CC2200" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
